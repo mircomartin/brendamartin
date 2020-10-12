@@ -1,0 +1,72 @@
+.footer {
+    color: $colorAzul;
+    p {
+        margin-bottom: 10px;
+    }
+    a {
+        color: $colorAzul;
+        &:hover {
+            cursor: pointer;
+            color: $colorAzul;
+        }
+    }
+    &__contactoTitle {
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    &__wrapperSuperior {
+        background-color: #FFB0A1;
+        padding: 80px;
+    }
+    &__input {
+        border-radius: 20px;
+        padding: 10px;
+        color: $colorAzul;
+        border: 2px solid $colorAzul;
+        background-color: transparent;
+        margin-right: 10px;
+        width: 67%;
+    }
+    &__boton {
+        border: 2px solid $colorAzul;
+        color: #fff;
+        background-color: $colorAzul;
+        border-radius: 12px;
+        padding: 10px;
+        transition: .4s ease all;
+        &:hover {
+            cursor: pointer;
+            color: $colorAzul;
+            background-color: transparent;
+        }
+    }
+}
+
+.firma {
+    color: $colorAzul;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 0!important;
+    a {
+        color: $colorAzul;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        background-color: #FFB0A1;
+        text-align: center;
+        &__wrapperSuperior {
+            padding: 40px;
+        }
+        &__input {
+            margin-right: 0px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        &__boton {
+            width: 100%;
+            padding: 10px;
+        }
+    }
+}

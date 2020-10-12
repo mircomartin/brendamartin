@@ -1,0 +1,38 @@
+.sobreMi {
+    margin-bottom: 130px;
+    &__wrapperInfo {
+        margin-bottom: 130px;
+    }
+    &__titleInfo {
+        color: $colorAzul;
+        letter-spacing: 6.4px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    &__subtitleInfo {
+        color: $colorAzul;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    &__parrafoInfo {
+        line-height: 24px;
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sobreMi {
+        margin-bottom: 50px;
+        &__wrapperInfo {
+            margin-bottom: 50px;
+        }
+        &__titleInfo {
+            text-align: center;
+        }
+        &__subtitleInfo {
+            text-align: center;
+        }
+    }
+}

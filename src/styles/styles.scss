@@ -1,0 +1,14 @@
+//Base
+@import './base/variables';
+@import './base/base';
+
+//Layout
+@import './layout/header';
+@import './layout/footer';
+@import './layout/tituloseccion';
+
+
+//Pages
+@import './pages/index';
+@import './pages/sobremi';
+@import './pages/contacto';

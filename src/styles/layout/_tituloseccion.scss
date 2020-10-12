@@ -1,0 +1,28 @@
+.tituloSeccion {
+    padding: 140px;
+    background-color: $bgTurquesa;
+    text-align: center;
+    margin-bottom: 130px;
+    &__title {
+        letter-spacing: 6.4px;
+        color: $colorAzul;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    &__subTitle {
+        font-size: 33px;
+        color: $colorAzul;
+        line-height: 42.9px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tituloSeccion {
+        padding: 40px;
+        margin-bottom: 50px;
+        &__subTitle {
+            font-size: 30px;
+        }
+    }
+}

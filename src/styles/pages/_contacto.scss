@@ -1,0 +1,70 @@
+.contacto {
+    margin-bottom: 130px;
+    &__info {
+        p {
+            color: $colorNegro;
+        }
+    }
+    &__formulario {
+        margin-top: 60px;
+    }
+    &__inputs {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $colorAzul;
+        padding: 10px;
+        color: $colorAzul;
+        &:focus {
+            background-color: $bgCeleste;
+        }
+        &:hover {
+            background-color: $bgCeleste;
+        }
+    }
+    &__wrapperMensaje {
+        margin-top: 20px;
+        text-align: center;
+    }
+    &__mensaje {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $colorAzul;
+        padding: 10px;
+        color: $colorAzul;
+        height: 200px;
+        &:focus {
+            background-color: $bgCeleste;
+        }
+        &:hover {
+            background-color: $bgCeleste;
+        }
+    }
+    &__boton {
+        display: inline-block;
+        margin-top: 20px;
+        border-radius: 20px;
+        background-color: $colorAzul;
+        color: #fff;
+        padding: 10px 25px;
+        border: 2px solid transparent;
+        transition: .4s ease all;
+        &:hover {
+            cursor: pointer;
+            border: 2px solid $colorAzul;
+            background-color: transparent;
+            color: $colorAzul;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacto {    
+        margin-bottom: 50px;
+        &__inputs {
+            margin-bottom: 15px;
+        }
+        &__wrapperMensaje {
+            margin-top: 0px;
+        }
+    }
+}

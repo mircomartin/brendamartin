@@ -1,0 +1,241 @@
+.parallax {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    &__video {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: -1000;
+        overflow: hidden;
+    }
+    &__body {
+        padding-top: 18%;
+        text-align: center;
+    }
+    &__title {
+        color: $colorAzul;
+        letter-spacing: 8px;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    &__subTitle {
+        color: $colorAzul;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    &__parrafo {
+        color: $colorAzul;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    &__boton {
+        display: inline-block;
+        border-radius: 20px;
+        color: $colorAzul;
+        background-color: $colorRosa;
+        border: 2px solid $colorRosa;
+        padding: 10px 20px;
+        transition: 0.4s ease all;
+        &:hover {
+            background-color: transparent;
+            border: 2px solid $colorAzul;
+        }
+    }
+}
+
+.aboutIndex {
+    margin-top: 130px;
+    margin-bottom: 130px;
+    &__wrapperRight {
+        display: flex;
+        align-items: center;
+        p {
+            line-height: 24px;
+            text-align: justify;
+        }
+    }
+    &__title {
+        font-size: 16px;
+        letter-spacing: 6.4px;
+        color: $colorAzul;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    &__subTitle {
+        font-size: 33px;
+        color: $colorAzul;
+        line-height: 42.9px;
+        margin-bottom: 15px;
+    }
+    &__boton {
+        display: inline-block;
+        margin-top: 20px;
+        border-radius: 20px;
+        background-color: $colorRosa;
+        color: $colorAzul;
+        padding: 10px 25px;
+        border: 2px solid transparent;
+        transition: .4s ease all;
+        &:hover {
+            cursor: pointer;
+            border: 2px solid $colorAzul;
+            background-color: transparent;
+        }
+    }
+}
+
+.serviciosIndex {
+    &__wrapperTitle {
+        padding: 140px;
+        background-color: $bgTurquesa;
+        text-align: center;
+    }
+    &__title {
+        font-size: 16px;
+        letter-spacing: 6.4px;
+        color: $colorAzul;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    &__subTitle {
+        font-size: 33px;
+        color: $colorAzul;
+        line-height: 42.9px;
+    }
+    &__servicesZone {
+        margin-top: 40px;
+        text-align: center;
+        p {
+            margin-bottom: 15px;
+            line-height: 24px;
+        }
+    }
+    &__consultas {
+        background-color: $bgCeleste;
+        width: 48%;
+        padding: 60px;
+    }
+    &__blog {
+        background-color: $bgPastel;
+        width: 48%;
+        padding: 60px;
+    }
+    &__img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 15px;
+    }
+    &__titleConsultaArticulos {
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: $colorAzul;
+    }
+    &__boton {
+        display: inline-block;
+        border-radius: 20px;
+        padding: 10px 25px;
+        background-color: $colorAzul;
+        color: #fff;
+        border: 2px solid transparent;
+        transition: .4s ease all;
+        &:hover {
+            border: 2px solid $colorAzul;
+            background-color: transparent;
+            color: $colorAzul;
+        }
+    }
+}
+
+.testimonios {
+    margin: 130px auto;
+    text-align: center;
+    &__title {
+        font-size: 16px;
+        letter-spacing: 6.4px;
+        color: $colorAzul;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    &__subTitle {
+        font-size: 33px;
+        color: $colorAzul;
+        line-height: 42.9px;
+    }
+    &__wrapperOpiniones {
+        margin-top: 50px;
+    }
+    &__img {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 20px;
+    }
+    &__persona {
+        font-size: 20px;
+        color: $colorAzul;
+        padding-bottom: 20px;
+        position: relative;
+        margin-bottom: 15px;
+        &::after {
+            content: '';
+            height: 1px;
+            width: 100px;
+            position: absolute;
+            background-color: $colorAzul;
+            top: 100%;
+            left: calc(50% - 50px);
+        }
+    }
+    &__parrafo {
+        font-size: 19px;
+        font-style: italic;
+        line-height: 34px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .parallax {
+        width: auto;
+        height: auto;
+        &__video {
+            width: auto;
+            height: auto;
+        }
+        &__body {
+            padding-top: 35%;
+            padding-bottom: calc(35% - 30px);
+            text-align: center;
+        }
+        &__subTitle {
+            font-size: 30px;
+        }
+        &__boton {
+            padding: 5px 10px;
+        }
+    }
+
+    .aboutIndex {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .serviciosIndex {
+        &__wrapperTitle {
+            padding: 40px;
+        }
+        &__subTitle {
+            font-size: 30px;
+        }
+        &__blog {
+            width: auto;
+            padding: 30px;
+        }
+        
+    }
+    
+}
