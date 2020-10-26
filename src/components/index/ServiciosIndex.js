@@ -26,7 +26,7 @@ export const ServiciosIndex = () => {
 						<p>
 							Podés consultar por tu Obra Social o tambien atiendo de forma particular.
 						</p>
-						<Link to="/" className="serviciosIndex__boton">Leer Más</Link>
+						<Link to="/contacto" className="serviciosIndex__boton">Leer Más</Link>
 					</div>
 				</div>
 				<div className="col-12 col-md-auto serviciosIndex__blog" data-aos="flip-right">
@@ -40,7 +40,7 @@ export const ServiciosIndex = () => {
 						<p>
 							Podrás encontrar diversos articulos relacionados, consejos para cuidar a los niños y muchas más.
 						</p>
-						<Link to="/" className="serviciosIndex__boton">Leer Más</Link>
+						<Link to="/blog" className="serviciosIndex__boton">Leer Más</Link>
 					</div>
 				</div>
 			</div>

@@ -15,7 +15,7 @@ export const Parallax = () => {
                         <h2 className="parallax__title">Brenda Martin</h2>
                         <h3 className="parallax__subTitle">Pediatra Infantil</h3>
                         <p className="parallax__parrafo d-none d-md-block">Para turnos y consultas</p>
-                        <Link to="/" className="parallax__boton d-none d-md-inline-block">Contacto</Link>
+                        <Link to="/contacto" className="parallax__boton d-none d-md-inline-block">Contacto</Link>
                     </div>
                 </div>
             </div>

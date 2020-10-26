@@ -5,8 +5,9 @@
             color: $colorNegro;
         }
     }
-    &__formulario {
-        margin-top: 60px;
+    &__parrafo {
+        margin-bottom: 30px;
+        line-height: 24px;
     }
     &__inputs {
         width: 100%;
@@ -55,6 +56,11 @@
             color: $colorAzul;
         }
     }
+    &__mapa {
+        height: 100%;
+        width: 100%;
+        border: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -65,6 +71,9 @@
         }
         &__wrapperMensaje {
             margin-top: 0px;
+        }
+        &__formulario {
+            margin-bottom: 25px;
         }
     }
 }

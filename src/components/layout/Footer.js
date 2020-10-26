@@ -1,9 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 //Router
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+
+//Axios
+import axios from 'axios';
+
+//Swal
+import Swal from 'sweetalert2';
 
 export const Footer = () => {
+
+	const history = useHistory()
+
+	const [formValues, setFormValues] = useState({email:''})
+
+	const handleChange = e => {
+
+		setFormValues({
+			...formValues,
+			[e.target.name]:e.target.value})
+			
+	}
+
+	const handleSubmit = e => {
+		e.preventDefault();
+
+		if(formValues.email.trim() === '') {
+			
+			Swal.fire('Alerta!', 'El campo es obligatorio', 'warning');
+			return false;
+
+		}else{
+
+			axios.post('https://brendamartindb.herokuapp.com/newsletters', formValues)
+
+			Swal.fire('Exito!', 'Te has registrado de forma exitosa!', 'success');
+	
+			setFormValues({
+				email:'',
+			})
+			
+			history.push('/')
+
+		}
+
+	}
+
 	return (
 		<>
 			<footer className="footer">
@@ -26,7 +69,7 @@ export const Footer = () => {
 									<i className="far fa-envelope-open mr-2"></i>{' '}
 									info@mysite.com
 								</p>
-								<Link to="/">
+								<Link to="/contacto">
 									<span>
 										<i className="fas fa-pencil-alt mr-2"></i>
 									</span>
@@ -37,11 +80,14 @@ export const Footer = () => {
 						<div className="col-12 col-md-5 mb-4 mb-md-0">
 							<div className="footer__contacto">
 								<p>Suscríbete a mi newsletter</p>
-								<form>
+								<form onSubmit={handleSubmit}>
 									<input
 										type="text"
 										className="footer__input"
 										placeholder="Tu Email..."
+										name="email"
+										value={formValues.email}
+										onChange={handleChange}
 									/>
 									<button className="footer__boton">Aceptar</button>
 								</form>

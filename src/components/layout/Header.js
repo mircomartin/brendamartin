@@ -32,7 +32,7 @@ export const Header = () => {
                             <div className="header__menu d-flex justify-content-md-between flex-column flex-md-row">
                                 <NavLink activeClassName="selected" className="header__menuLinks" exact to="/">Inicio</NavLink>
                                 <NavLink activeClassName="selected" className="header__menuLinks" exact to="/sobremi">Sobre Mi</NavLink>
-                                <NavLink activeClassName="selected" className="header__menuLinks" exact to="/2">Blog</NavLink>
+                                <NavLink activeClassName="selected" className="header__menuLinks" exact to="/blog">Blog</NavLink>
                                 <NavLink activeClassName="selected" className="header__menuLinks" exact to="/contacto">Contacto</NavLink>
                             </div>
                         </div>

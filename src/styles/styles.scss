@@ -6,9 +6,12 @@
 @import './layout/header';
 @import './layout/footer';
 @import './layout/tituloseccion';
+@import './layout/spinner';
+@import './layout/paginacion';
 
 
 //Pages
 @import './pages/index';
 @import './pages/sobremi';
 @import './pages/contacto';
+@import './pages/blog';

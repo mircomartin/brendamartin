@@ -5,6 +5,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect,
 } from "react-router-dom";
 
 //Aos
@@ -17,6 +18,8 @@ import { Footer } from './components/layout/Footer';
 import { Index } from './components/pages/Index';
 import { SobreMi } from './components/pages/SobreMi';
 import { Contacto } from './components/pages/Contacto';
+import { Blog } from './components/pages/Blog';
+import { SingleBlog } from './components/blog/SingleBlog';
 
 function BrendaMartinApp() {
 
@@ -30,7 +33,10 @@ function BrendaMartinApp() {
         <Route exact path="/" component={Index}/>
         <Route exact path="/sobremi" component={SobreMi}/>
         <Route exact path="/contacto" component={Contacto}/>
+        <Route exact path="/blog" component={Blog}/>
+        <Route exact path="/blog/:titulo" component={SingleBlog}/>
 
+        <Redirect to="/"/>
       </Switch>
       <Footer/>
     </Router>
